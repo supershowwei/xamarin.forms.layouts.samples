@@ -4,7 +4,7 @@
              xmlns:local="clr-namespace:LayoutsSampleApp"
              x:Class="LayoutsSampleApp.MainPage">
 
-    <RelativeLayout>
+    <!--<RelativeLayout>
         <Label x:Name="Label1" Text="Welcome to Xamarin.Forms!" BackgroundColor="Red"
                RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=X, Constant=10}"
                RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Y, Constant=10}"
@@ -15,6 +15,33 @@
                RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToView, ElementName=Label1, Property=Height}"
                RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToView, ElementName=Label1, Property=X}"
                RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToView, ElementName=Label1, Property=Y, Constant=110}" />
-    </RelativeLayout>
+    </RelativeLayout>-->
+    
+    <!--<StackLayout>
+        <Button VerticalOptions="Start" HeightRequest="40" Text="I'm Button1"></Button>
+        <Button VerticalOptions="Center" HeightRequest="40" Text="I'm Button2"></Button>
+        <Button VerticalOptions="End" HeightRequest="40" Text="I'm Button3"></Button>
+        <Button HorizontalOptions="Start" WidthRequest="40" Text="4"></Button>
+        <Button HorizontalOptions="Center" WidthRequest="40" Text="5"></Button>
+        <Button HorizontalOptions="End" WidthRequest="40" Text="6"></Button>
+    </StackLayout>-->
+    
+    <!--<StackLayout>
+        <Button VerticalOptions="StartAndExpand" HeightRequest="40" Text="I'm ButtonA"></Button>
+        <Button VerticalOptions="Start" HeightRequest="40" Text="I'm Button1"></Button>
+        <Button VerticalOptions="CenterAndExpand" HeightRequest="40" Text="I'm ButtonB"></Button>
+        <Button VerticalOptions="Center" HeightRequest="40" Text="I'm Button2"></Button>
+        <Button VerticalOptions="EndAndExpand" HeightRequest="40" Text="I'm ButtonC"></Button>
+        <Button VerticalOptions="End" HeightRequest="40" Text="I'm Button3"></Button>
+        <Button VerticalOptions="FillAndExpand" HeightRequest="40" Text="I'm ButtonD"></Button>
+        <Button VerticalOptions="Fill" HeightRequest="40" Text="I'm Button4"></Button>
+    </StackLayout>-->
+
+    <StackLayout Orientation="Horizontal">
+        <Button HorizontalOptions="StartAndExpand" WidthRequest="40" Text="A"></Button>
+        <Button HorizontalOptions="CenterAndExpand" WidthRequest="40" Text="B"></Button>
+        <Button HorizontalOptions="EndAndExpand" WidthRequest="40" Text="C"></Button>
+        <Button HorizontalOptions="FillAndExpand" WidthRequest="40" Text="D"></Button>
+    </StackLayout>
 
 </ContentPage>
